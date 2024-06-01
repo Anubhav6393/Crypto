@@ -82,20 +82,6 @@ const Navbar = () => {
           </h1>
         </NavLink>
         <NavLink
-          to="/exchanges"
-          className={({ isActive }) =>
-            `text-gray-200 hover:bg-[#0071bd] flex gap-2 items-center w-full pl-5 ${
-              isActive ? "bg-[#0071bd]" : "bg-transparent"
-            } p-2 rounded-md`
-          }
-          onClick={() => setShowOptions(false)}
-        >
-          <BsCurrencyExchange />
-          <h1 className={!showOptions && "block max-[500px]:hidden"}>
-            Exchanges
-          </h1>
-        </NavLink>
-        <NavLink
           to="/news"
           className={({ isActive }) =>
             `text-gray-200 hover:bg-[#0071bd] flex gap-2 items-center w-full pl-5 ${
